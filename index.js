@@ -14,7 +14,7 @@ app.use(express.json());
 app.post("/register", async (req, res) => {
   try {
     const { data } = await axios({
-      method: "PUT",
+      method: "PATCH",
       url: `${baseUrl}/api/dataentities/CL/documents`,
       headers: {
         accept: "application/vnd.vtex.ds.v10+json",
